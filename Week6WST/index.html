@@ -5,7 +5,10 @@
     <title>Jaune Automobiles</title>
     <link href="stylesheet.css" rel="stylesheet">
     <!--Icon for title-->
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
     <!--Meta information-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,13 +19,29 @@
   </head>
 
   <body>
+    <!--Navigation section-->
     <div class="nav">
       <ul>
-        <img alt="logo">
-        <a>Home</a>
+        <img src="jaunelogowithtext.png" alt="logo" width="90px" height="80px">
+        <a href="index.html">Home</a>
         <a>About us</a>
         <a>Contact</a>
       </ul>
+    </div>
+    <!--Home page section-->
+    <div class="parallax">
+      <div class="search-engine">
+        <form>
+          <input type="search" name="search" placeholder="Search on Jaune Automobiles">
+          <button type="button"></button>
+        </form>
+      </div>
+    </div>
+    <div class="services">
+      <div>Info</div>
+      <div>New Cars</div>
+      <div>Parts</div>
+      <div>Services</div>
     </div>
   </body>
 </html>
