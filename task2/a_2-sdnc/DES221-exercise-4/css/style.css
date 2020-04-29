@@ -1,0 +1,160 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* General rules */ 
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+li, a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: large;
+}
+
+.wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section.nav-section {
+  margin-bottom: 150px;
+  background-color: rgb(205, 205, 205);
+}
+
+img.logo {
+  max-width: 150px;
+  height: auto;
+}
+
+img.hamburger {
+  max-width: 30px;
+  height: auto;
+}
+
+/* Navigation bar 1 */
+
+#nav-1 ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  
+}
+
+#nav-1 a {
+  padding-left: 15px;
+}
+
+#nav-1 .link-hamburger {
+  position: relative;
+  right: -430px;
+}
+
+/* Navigation Bar 2 */
+
+#nav-2 ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    order: -1, 2;
+    align-items: center;
+}
+
+#nav-2 .link-logo {
+  order: 1;
+}
+
+#nav-2 .link-history, #nav-2 .link-blog, #nav-2 .link-shop {
+  order: 3;
+}
+
+#nav-2 .link-hamburger {
+  display: none;
+}
+
+/* Navigation Bar 3 */
+
+#nav-3 ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#nav-3 a {
+  padding-left: 15px;
+}
+
+#nav-3 .link-hamburger {
+  position: relative;
+  left: 380px;
+}
+
+#nav-3 .link-logo {
+  position: relative;
+  right: 320px;
+}
+
+#nav-3 .wrap {
+  position: relative;
+  left: -60px;
+}
+
+/* Navigation Bar 4 */
+
+#nav-4 .wrap {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: -20px;
+}
+
+#nav-4 .link-home, #nav-4 .link-about, #nav-4 .link-contact, #nav-4 .link-history, #nav-4 .link-blog, #nav-4 .link-shop{
+  display: inline-flex;
+  vertical-align: middle;
+  padding-top: 30px;
+  padding-left: 15px;
+}
+
+#nav-4 .link-logo {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+}
+
+#nav-4 .link-hamburger {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  top: -90px;  
+  left: 415px;
+}
+
+/* Navigation Bar 5 */
+
+#nav-5 .wrap {
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+#nav-5 li {
+  padding-bottom: 20px;
+  position: relative;
+  left: 90px;
+}
+
+#nav-5 .link-hamburger {
+  position: absolute;
+  top: 1020px; /* Pixel # from the top */
+  left: 30px;
+}
+

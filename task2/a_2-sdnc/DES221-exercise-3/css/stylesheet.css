@@ -1,0 +1,49 @@
+body {
+    margin: auto;
+    background-color: rgb(254, 191, 110);
+    font-family: fantasy;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    font-size: xx-large;
+}
+
+.bannercontainer {
+    box-shadow: 0px 5px 8px -3px rgba(3, 4, 11, 0.55);
+    border: 2px black solid;
+    display: flex;
+    width: 90%;
+    margin: 50px;
+    background-color:rgb(255, 243, 227);
+}
+
+.container img {
+    width: 920px;
+    height: 460px;
+    padding: 20px;
+}
+
+.bannercontainer h4, h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.rationale {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-flow: wrap;
+    margin: 30px;
+    padding: 10px;
+    border: outset;
+    height: 300px;
+    position: relative;
+    top: 110px;
+    background-color: rgb(254, 191, 110);
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
