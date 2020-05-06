@@ -1,0 +1,236 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    min-height: 100%; 
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+
+@media only screen and (min-width: 768px) {
+/* Desktop (> 1200px) */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+.nav li {width: 15%}
+.row {background-image: linear-gradient(rgba(245, 246, 252, 0.52), rgb(250, 200, 91)), url(/img/goldenchair.jpg); display: flex;}
+.cups {display: flex; justify-content: space-around; flex-wrap: wrap; margin: 0px 150px 0px 150px;}
+#redcup, #nohandle {margin-top: 60px;}
+#text {position: relative; right: 1180px;}
+.header a {position: relative; font-size: x-large; top:140px; right:-580px;}
+.mugtypes img {align-items: flex-start; justify-content: flex-end; position: relative; top: 100px;}
+}
+
+/* Mobile phones */
+@media only screen and (max-width: 400px) {
+    /* For mobile phones: */
+    [class*="col-"] 
+      {width: 100%;}
+    .footer ul a {font-size: xx-small;}
+    .header a {position: relative; top: 150px; right: 250px; font-size: large;}
+    .mugtypes img {display: none;}
+    } 
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+    }
+
+    .container {
+        border: none;
+        margin: none;
+    }
+
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(rgb(118, 0, 0), rgb(154, 0, 0));
+    border-bottom: solid 1px rgb(198, 168, 0);
+}
+
+.header img {
+    width: 200px;
+    height: 190px;
+    padding: 20px;
+}
+
+.header a {
+  color: black;
+}
+
+.header a:hover {
+  color: rgb(198, 168, 0);
+}
+/* Main section and navigation */
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 15px;
+  }
+
+.nav a {
+    text-decoration: none;
+    color: rgb(198, 168, 0);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.nav li {
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 7px;
+    margin-top: 10px;
+    background-color: rgb(118, 0, 0);
+    color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 1, 0.6);
+  }
+
+.nav li:hover {
+    background-color: whitesmoke;
+  }
+
+.row {
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 250px;
+    padding-top: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 1, 0.6);
+}
+
+.row p {
+    position: relative;
+    top: 310px;
+    right: 1000px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    font-size: xx-large;
+    font-style: italic;
+    color:rgb(255, 249, 249);
+    text-shadow: -1px 0 rgb(235, 180, 0), 0 1px rgb(235, 180, 0), 1px 0 rgb(235, 180, 0), 0 -1px rgb(235, 180, 0);
+}
+
+/* New Collection Gallery */
+.collection {
+    text-align: center;
+    margin-top: -20px;
+    background: linear-gradient(rgba(245, 246, 252, 0.52), rgb(250, 200, 91));
+}
+.collectionheading {
+    display: inline-block;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.cups {
+  padding: 0px 70px 0px 70px;
+  padding-bottom: 100px;
+}
+.cup {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin-top: 40px;
+    border: 1px solid black;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: whitesmoke;
+  }
+  
+.price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+.cup button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .cup button:hover {
+    text-decoration: underline;
+    font-weight: bolder;
+  }
+
+.cup img {
+  float:  left;
+  width:  200px;
+  height: 250px;
+  background-size: cover;
+  border-bottom: black solid 1px;
+}
+
+.cup h1 {
+  padding-top: 250px;
+  font-style: italic;
+}
+
+/* Footer */
+.footer {   
+  background-color: rgb(55, 55, 74);
+  color: rgba(128, 128, 128, 0.776);
+}
+.footer a {
+  padding: 0px 10px 0px 10px;
+}
+.justify-left {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 20px;
+  flex-flow: row;
+}
+.justify-left p {
+  padding-left: 20px;
+  position: relative;
+  top: -15px;
+}
+.justify-left span {
+  padding-right: 20px;
+  
+}
+.justify-right {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+.footer a:hover {
+  color: rgb(255, 217, 0);
+  cursor: pointer;
+}
+.social-media {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+  position: relative;
+  top: -30px;
+}
